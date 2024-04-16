@@ -4,7 +4,7 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return file_get_contents(public_path('ui-template/index.html'));
+    return view('welcome');
 });
 
 Route::get('/dashboard', function () {
